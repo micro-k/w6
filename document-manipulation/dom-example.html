@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple DOM example</title>
+    <style>
+      .highlight {
+        color: cyan;
+        background-color: black;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
       <section>
@@ -15,6 +24,8 @@
       const para = document.createElement('p');
       para.textContent = 'パラグラフの追加.';
       sect.appendChild(para);
+      
+      para.setAttribute('class', 'highlight');
     </script>
       
   </body>
